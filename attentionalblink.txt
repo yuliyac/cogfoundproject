@@ -1,7 +1,7 @@
 Attentional Blink Experiment
 
 Please fill out this survey.
- //all questions have open ended responses boxes
+ //all questions have open ended response boxes
 
 
 Name:
