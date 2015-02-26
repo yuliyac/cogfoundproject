@@ -1,0 +1,43 @@
+Attentional Blink Experiment
+
+Please fill out this survey.
+ //all questions have open ended responses boxes
+
+
+Name:
+
+Gender: 
+
+Age:
+
+Race:
+
+Occupation: 
+
+Do you meditate? Y/N
+If yes, how often and for how long?
+
+How many hours a day do you spend on social media?
+
+How many hours a week do you watch TV?
+
+
+Click "OK" button when complete. 
+//insert button graphic here
+
+Instructions:
+The task is to identify two consecutive numbers in a stream of letters. 
+
+Click the "Go!" button when you are ready to begin.
+//insert button graphic here
+
+2 seconds of graphics back to back:
++ A G 9 K L M 2 N Y P R S 7 5 K D A 6 F 3 ! P O K A 
+
+Post survey questionnaire: 
+What was the first number you saw?
+What was the second number you saw?
+
+Click "OK" button when complete. Thank you for your participation!
+//insert button graphic here
+
