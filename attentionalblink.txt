@@ -1,9 +1,16 @@
+<<<<<<< HEAD
 readme.txt
 
 Attentional Blink Experiment
 
 Please fill out this survey.
  //all questions have open ended responses boxes
+=======
+Attentional Blink Experiment
+
+Please fill out this survey.
+ //all questions have open ended response boxes
+>>>>>>> e16cd558b574f809807cbca4ea5461601e3dbfac
 
 
 Name:
