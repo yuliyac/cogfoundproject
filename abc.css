@@ -1,6 +1,6 @@
 
 body {
-  color: #fff;
+  color: black;
   font: 600 14px/24px "Open Sans", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", Sans-Serif;
 }
 .box {
@@ -10,8 +10,8 @@ body {
   height: 95px;
   line-height: 95px;
   text-align: center;
-  transition-property: background;
-  transition-duration: 1s;
+  transition-property: text;
+  transition-duration: 5ms;
   transition-timing-function: linear;
   width: 95px;
 }
