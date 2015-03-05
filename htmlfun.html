@@ -3,14 +3,18 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Attentional Blink</title>
-		<link rel="stylesheet" href="abc.css">
+		<link rel="stylesheet" href="an.css">
 
 </head>
 <body>
+
 	<div id="myheader">Welcome to the attentional blink experiment!</div>
 	<br>
 	<div id="myheader">Please fill out the survey below and click "Ok!" when you are ready to begin.</div>
 	
+	<form method="post" action ="" id="formToSave">
+		<dl>
+
 	<p> Name: </p> 
 	<p> <input id = " " type="text" value=" "></p>
 
@@ -40,14 +44,46 @@
 
 	<p> Click "OK" when you are ready to proceed!</p> 
 
+</dl>
+
+	<p><a href="javascript://Save as TXT" id="submitLink"> Save as TXT </a></p>
+
 	<button onclick="alert('Instructions: The task is to identify two consecutive numbers in a stream of letters. Hit OK when you are ready to begin.'),location.href='an.html'">OK!</button>
 
-
+//
 </body>
 <script src ="http://code.jquery.com/jquery-2.1.3.min.js"></script>
 
 
 
 
+	
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script type="text/javascript" src="base64.js"></script>
+<script type="text/javascript">
+<!--
+// This will generate the text file content based on the form data
+function buildData(){
+    var txtData = "Name: "+$("#nameField").val()+
+            "\r\nLast Name: "+$("#lastNameField").val()+
+            "\r\nGender: "+($("#genderMale").is(":checked")?"Male":"Female");
 
+    return txtData;
+}
+// This will be executed when the document is ready
+$(function(){
+    // This will act when the submit BUTTON is clicked
+    $("#formToSave").submit(function(event){
+        event.preventDefault();
+        var txtData = buildData();
+        window.location.href="data:application/octet-stream;base64,"+Base64.encode(txtData);
+    });
+
+    // This will act when the submit LINK is clicked
+    $("#submitLink").click(function(event){
+        var txtData = buildData();
+        $(this).attr('download','sugguestedName.txt')
+            .attr('href',"data:application/octet-stream;base64,"+Base64.encode(txtData));
+    });
+});
 </html>
