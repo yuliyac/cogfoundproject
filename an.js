@@ -4,10 +4,10 @@ an.js$(function() {
     var stimulus = $("#stimulus");
     // set the delay parameters
     var presentationInterval = 250;
-    var interStimulusInterval = 50;
+    var interStimulusInterval = [50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50];
     
     // initialize your stimuli here
-    var stimuli = [ 'A', 'B', 'C', 'D', 'E' ];
+    var stimuli = [ '+', 'A', 'G', '9', 'K', 'L', 'M', '2', 'N', 'Y', 'P', 'R', 'S', '7', '5', 'K', 'D', 'A', '6', 'F', '3', '!', 'P', 'O', 'K', 'A' ];
     var i = 0;
     
     // update is the main stimulus presentation loop, it recursively calls
