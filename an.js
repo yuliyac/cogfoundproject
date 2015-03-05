@@ -1,11 +1,10 @@
-$(function() {
-    var main = function() {
+var main = function() {
 
     var container = $(".container");
     var stimulus = $("#stimulus");
     var stimuli = [ 'A', 'B', 'C', 'D', 'E' ];
     var stimuliIntervals = [100,200,300,600,2000];
-    var interstimIntervals = [200,400,600,1200,4000];
+    var interstimIntervals = [500,500,500,500,500];
     var i = 0;
     
     function hasNextStimulus() {
