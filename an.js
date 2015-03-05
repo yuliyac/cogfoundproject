@@ -3,7 +3,7 @@ an.js$(function() {
     var container = $(".container");
     var stimulus = $("#stimulus");
     // set the delay parameters
-    var presentationInterval = 250;
+    var presentationInterval = 250, 250, 250, 250, 250, 250, 250, 250, 250, 250,250, 250, 250, 250, 250,250, 250, 250, 250, 250,250, 250, 250, 250, 250, 250;
     var interStimulusInterval = [50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50];
     
     // initialize your stimuli here
