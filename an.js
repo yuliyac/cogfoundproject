@@ -2,9 +2,9 @@ var main = function() {
 
     var container = $(".container");
     var stimulus = $("#stimulus");
-    var stimuli = [ 'A', 'B', 'C', 'D', 'E' ];
-    var stimuliIntervals = [100,200,300,600,2000];
-    var interstimIntervals = [500,500,500,500,500];
+    var stimuli = [ '+', 'A', 'G', '9', 'K','L', 'M', '2', 'N', 'Y','P', 'R', 'S', '7', '5','K', 'D', 'A', '6', 'F','3', '!', 'P', '0', 'K','A' ];
+    var stimuliIntervals = [100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100];
+    var interstimIntervals = [200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200];
     var i = 0;
     
     function hasNextStimulus() {
