@@ -1,36 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
 
-<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Done</title>
+    <script src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
+</head>
 
-	<p> Which two numbers did you see consecutivley? : </p> 
-	<p> <input id = " " type="text" value=" "></p>
+<body>
+    <p> Thank you for your participation :)! </p>
+</body>
 
-	<p> Name: </p> 
-	<p> <input id = " " type="text" value=" "></p>
+<script>
 
-	<p> Gender: </p> 
-	<p> <input id = " " type="text" value=" "></p>
+// Got this from http://stackoverflow.com/questions/901115/how-can-i-get-query-string-values-in-javascript
+function getParameterByName(name) {
+    name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+    var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+        results = regex.exec(location.search);
+    return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+}
 
-	<p> Age: </p> 
-	<p> <input id = " " type="text" value=" "></p>
+$("body").append(getParameterByName("fullname") + "<br> <br>");
+$("body").append(getParameterByName("age") + "<br> <br>");
+$("body").append(getParameterByName("gender") + "<br> <br>");
 
-	<p> Race: </p> 
-	<p> <input id = " " type="text" value=" "></p>
-
-	<p> Occupation: </p> 
-	<p> <input id = " " type="text" value=" "></p>
-
-	<p> Do you meditate? : </p> 
-	<p> <input id = " " type="text" value=" "></p>
-
-	<p> If yes, how often and for how long? : </p> 
-	<p> <input id = " " type="text" value=" "></p>
-
-	<p> How many hours a day do you spend on social media? : </p> 
-	<p> <input id = " " type="text" value=" "></p>
-
-	<p> How many hours a day do you watch tv? : </p> 
-	<p> <input id = " " type="text" value=" "></p>
-
-	<p>	Thank you for your participation :)! </p>
+</script>
 
 </html>
