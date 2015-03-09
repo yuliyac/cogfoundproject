@@ -13,17 +13,24 @@
 
 <script>
 
-// Got this from http://stackoverflow.com/questions/901115/how-can-i-get-query-string-values-in-javascript
 function getParameterByName(name) {
     name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
     var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
         results = regex.exec(location.search);
     return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
 }
-
+$("body").append(getParameterByName("answer") + "<br> <br>");
 $("body").append(getParameterByName("fullname") + "<br> <br>");
 $("body").append(getParameterByName("age") + "<br> <br>");
 $("body").append(getParameterByName("gender") + "<br> <br>");
+$("body").append(getParameterByName("race") + "<br> <br>");
+$("body").append(getParameterByName("occupation") + "<br> <br>");
+$("body").append(getParameterByName("meditateyn") + "<br> <br>");
+$("body").append(getParameterByName("meditated") + "<br> <br>");
+$("body").append(getParameterByName("socialmedia") + "<br> <br>");
+$("body").append(getParameterByName("tv") + "<br> <br>");
+
+
 
 </script>
 
