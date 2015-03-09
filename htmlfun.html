@@ -1,61 +1,69 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<title>Attentional Blink</title>
-		<link rel="stylesheet" href="an.css">
+    <meta charset="UTF-8">
+    <title>Attentional Blink</title>
+    <link rel="stylesheet" href="an.css">
 
 </head>
+
 <body>
-	<br><br>
-	<div id="myheader">Please fill out the survey below and click "Done!" when you are finished.</div>
-	<br><br>
-<form>
-Which two numbers did you see consecutively?:<br><br>
-<input type="text" name="answer"><br><br>
-Full name:<br>
-<input type="text" name="fullname"><br>
-<br>
-Age:<br>
-<input type="text" name="age"><br>
-<br>
-Gender:<br>
-<input type="text" name="gender"><br>
-<br>
-Race:<br>
-<input type="text" name="race"><br>
-<br>
-Occupation:<br>
-<input type="text" name="occupation"><br>
-<br>
-Do you meditate:<br>
-<input type="text" name="meditateyn"><br>
-<br>
-If yes, how often and for how long?:<br>
-<input type="text" name="meditated"><br>
-<br>
-How many hours a day do you spend on social media?:<br>
-<input type="text" name="socialmedia"><br>
-<br>
-How many hours a day do you watch tv?:<br>
-<input type="text" name="tv"><br>
-<br>
+    <br>
+    <br>
+    <div id="myheader">Please fill out the survey below and click "Done!" when you are finished.</div>
+    <br>
+    <br>
+    <form action="showresults.html" method="GET">
+        Which two numbers did you see consecutively?:
+        <br>
+        <br>
+        <input type="text" name="answer">
+        <br>
+        <br> Full name:
+        <br>
+        <input type="text" name="fullname">
+        <br>
+        <br> Age:
+        <br>
+        <input type="text" name="age">
+        <br>
+        <br> Gender:
+        <br>
+        <input type="text" name="gender">
+        <br>
+        <br> Race:
+        <br>
+        <input type="text" name="race">
+        <br>
+        <br> Occupation:
+        <br>
+        <input type="text" name="occupation">
+        <br>
+        <br> Do you meditate:
+        <br>
+        <input type="text" name="meditateyn">
+        <br>
+        <br> If yes, how often and for how long?:
+        <br>
+        <input type="text" name="meditated">
+        <br>
+        <br> How many hours a day do you spend on social media?:
+        <br>
+        <input type="text" name="socialmedia">
+        <br>
+        <br> How many hours a day do you watch tv?:
+        <br>
+        <input type="text" name="tv">
+        <br>
+        <br>
+        <input type="submit" value="submit">
 
+    </form>
 
-
-	<p> Please click "Done!" when you have completed the form!</p> 
-
-
- 	    	<button onclick="alert('Thank you for your participation! :)'),location.href='end.html'"> Done!</button>
-
+    <p> Please click "Submit" when you have completed the form!</p>
 
 
 </body>
-<script src ="http://code.jquery.com/jquery-2.1.3.min.js"></script>
-
-
-
-
 
 </html>
